@@ -1,0 +1,46 @@
+.contact-item {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    &__info {
+        flex-shrink: 1;
+        width: 220px;
+    }
+    &__icon {
+        vertical-align: middle;
+    }
+    &__name {
+        vertical-align: middle;
+        margin-left: 6px;
+        display: inline-block;
+    }
+    &-link {
+        font-size: 20px;
+        display: inline-block;
+        flex-shrink: 0;
+        &:hover {
+            text-decoration: none;
+        }
+        svg {
+            fill: $link-color;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        &:hover svg {
+            fill: $link-hover-color;
+        }
+        span {
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .contact-item {
+        font-size: 16px;
+    }
+    .contact-item-link {
+        font-size: 16px;
+    }
+}

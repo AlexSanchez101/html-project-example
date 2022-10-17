@@ -1,0 +1,21 @@
+.section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    &-heading {
+        margin-bottom: 35px;
+    }
+
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    @include media-breakpoint-down(sm) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

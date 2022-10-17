@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% set title = "Контакты" %}
+{% set breadcrumbs = ["Главная"] %}
+
+
+{% block content %} 
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-10 mx-auto">
+            <div class="mb-4 pb-2">
+                <b>Предпочтительный способ связи:</b>
+            </div>
+            <div class="contact-item">
+                <div class="contact-item__info">
+                    <img src="./assets/img/icon-telegram-blue.svg" alt="">
+                    <div class="contact-item__name"><span>Telegram</span></div>
+                </div>
+                <a target="_blank" href="https://t.me/guideinseoul" class="contact-item-link">@guideinseoul</a>
+            </div>
+            <hr class="my-5">
+            <div class="mb-4 pb-2">
+                <b>Также можете связаться по:</b>
+            </div>
+            <div class="contact-item mb-4">
+                <div class="contact-item__info">
+                    <img src="./assets/img/icon-whatsapp-blue.svg" alt="">
+                    <div class="contact-item__name">WhatsApp</div>
+                </div>
+                <a target="_blank" href="https://wa.me/+821039230726" class="contact-item-link">+82 10-3923-0726</a>
+            </div>
+            <div class="contact-item mb-4">
+                <div class="contact-item__info">
+                    <img src="./assets/img/icon-instagram-blue.svg" alt="">
+                    <div class="contact-item__name">Instagram</div>
+                </div>
+                <a target="_blank" href="https://www.instagram.com/guideinseoul/" class="contact-item-link">@guideinseoul</a>
+            </div>
+            <div class="contact-item mb-4">
+                <div class="contact-item__info">
+                    <img src="./assets/img/icon-phone-blue.svg" alt="">
+                    <div class="contact-item__name">Телефон</div>
+                </div>
+                <a target="_blank" href="tel:+821039230726" class="contact-item-link">+82 10-3923-0726</a>
+            </div>
+            <hr class="my-5">
+            <div class="mb-4 pb-2">
+                <b>Так же я есть:</b>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-xxl-5">
+                <div class="col mb-3">
+                    <a target="_blank" href="#" class="contact-item-link">
+                        <svg width="24" height="27" viewBox="0 0 24 27"> 
+                            <use xlink:href="#svgApplePod" x="0" y="0" />
+                        </svg>
+                        <span>Apple Podcasts</span>
+                    </a>
+                </div>
+                <div class="col mb-3">
+                    <a target="_blank" href="#" class="contact-item-link">
+                        <svg width="24" height="27" viewBox="0 0 25 25"> 
+                            <use xlink:href="#svgYandexPod" x="0" y="0" />
+                        </svg>
+                        <span>Yandex Podcasts</span>
+                    </a>
+                </div>
+                <div class="col mb-3">
+                    <a target="_blank" href="#" class="contact-item-link">
+                        <svg width="24" height="27" viewBox="0 0 26 26"> 
+                            <use xlink:href="#svgGooglePod" x="0" y="0" />
+                        </svg>
+                        <span>Google Podcasts</span>
+                    </a>
+                </div>
+                <div class="col mb-3">
+                    <a target="_blank" href="#" class="contact-item-link">
+                        <svg width="24" height="27" viewBox="0 0 25 25"> 
+                            <use xlink:href="#svgYandexDzen" x="0" y="0" />
+                        </svg>
+                        <span>Яндекс Дзен</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

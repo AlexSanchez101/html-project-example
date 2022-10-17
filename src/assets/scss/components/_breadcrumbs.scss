@@ -1,0 +1,38 @@
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    li {
+        display: inline-block;
+        font-size: 14px;
+        margin-right: 20px;
+        position: relative;
+        color: #848B9D;
+        &::before {
+            content: none;
+        }
+        &::after {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background: $primary;
+            border-radius: 99em;
+            position: absolute;
+            right: -14px;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}

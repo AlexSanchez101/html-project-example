@@ -1,0 +1,84 @@
+<div class="top-panel">
+    <div class="container d-flex justify-content-between">
+        <div class="soc-media-links">
+                <a href="#" target="_blank" data-tippy-content="Instagram" data-tippy-placement="right-end" data-tippy-offset="[16,0]">
+                    <svg width="26" height="26" viewBox="0 0 26 26"> 
+                        <use xlink:href="#svgInstagram" x="0" y="0" />
+                    </svg>
+                </a>
+                <a href="#" target="_blank" data-tippy-content="Apple Podcasts" data-tippy-placement="right-end" data-tippy-offset="[16,0]">
+                    <svg width="24" height="27" viewBox="0 0 24 27"> 
+                        <use xlink:href="#svgApplePod" x="0" y="0" />
+                    </svg>  
+                </a>
+                <a href="#" target="_blank" data-tippy-content="Яндекс Подкаст" data-tippy-placement="right-end" data-tippy-offset="[16,0]">
+                    <svg width="25" height="25" viewBox="0 0 25 25"> 
+                        <use xlink:href="#svgYandexPod" x="0" y="0" />
+                    </svg>  
+                </a>
+                <a href="#" target="_blank" data-tippy-content="Google Podcasts" data-tippy-placement="right-end" data-tippy-offset="[16,0]">
+                    <svg width="26" height="26" viewBox="0 0 26 26"> 
+                        <use xlink:href="#svgGooglePod" x="0" y="0" />
+                    </svg>  
+                </a>
+                <a href="#" target="_blank" data-tippy-content="Яндекс Дзен" data-tippy-placement="right-end" data-tippy-offset="[16,0]">
+                    <svg width="25" height="25" viewBox="0 0 25 25"> 
+                        <use xlink:href="#svgYandexDzen" x="0" y="0" />
+                    </svg>  
+                </a>
+        </div>
+        <div class="city-time">
+            <img src="./assets/img/icon-clock-white.svg" alt="icon clock">
+            <div class="city-time__text">
+                Время в Сеуле
+                <span>22:48</span>
+            </div>
+        </div>
+    </div>
+</div> <!--/top-panel-->
+<div class="header__main">
+    <div class="container header__main-container">
+        {% if not homePage %}
+        <a href="/" class="header__logo">
+            <img src="./assets/img/logo.svg" width="138" height="65" alt="">
+        </a>
+        {% else %}
+        <span class="header__logo">
+            <img src="./assets/img/logo.svg" width="138" height="65" alt="">
+        </span>
+        {% endif %}
+        <nav class="header-nav">
+            <a class="header-nav__link active" href="/">Главная</a>
+            <a class="header-nav__link" href="/about.html">Обо мне</a>
+            <a class="header-nav__link" href="/turs.html">Экскурсии</a>
+            <a class="header-nav__link" href="/blog.html">Блог</a>
+            <a class="header-nav__link" href="/contacts.html">Контакты</a>
+        </nav>
+        <button type="button" class="header__mobile-menu-btn" data-toggle-mobile-menu="">
+            <img src="./assets/img/icon-hamburger-menu.svg" alt="mobile menu">
+        </button>
+        <button type="button" class="header__search-btn">
+            <svg width="26" height="26" viewBox="0 0 26 26"> 
+                <use xlink:href="#svgSearch" x="0" y="0" />
+            </svg>  
+        </button>
+        <div class="header__order">
+            {% include "_main-order-button.html" %}
+        </div>
+    </div> <!--/header__main-container-->
+</div><!--/header__main-->
+<div class="header-search-container container">
+    <div class="header-search">
+        <form action="" class="header-search__form">
+            <input type="text" class="header-search__input" placeholder="Поиск по сайту">
+            <button type="submit" class="header-search__submit">
+                <svg width="26" height="26" viewBox="0 0 26 26"> 
+                    <use xlink:href="#svgSearch" x="0" y="0" />
+                </svg>  
+            </button>
+        </form>
+        <button type="button" class="header-search__close-btn">
+            <img src="./assets/img/icon-cross-white.svg" alt="">
+        </button>
+    </div>
+</div>

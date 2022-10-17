@@ -1,0 +1,59 @@
+.cards-slider {
+    .swiper-slide {
+        height: auto;
+    }
+    &__item {
+        display: block;
+        color: $black;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        &:hover {
+            color: $black;
+            text-decoration: none;
+        }
+        &:hover &-name {
+            //color: $primary;
+        }
+        &-image {
+            width: 100%;
+            height: auto;
+            border-radius: $border-radius;
+            margin-bottom: 15px;
+        }
+        &-name {
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        &-text {
+            margin-top: auto;
+            font-size: 15px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .cards-slider__item-name {
+        font-size: 16px;
+    }
+    .cards-slider__item-text {
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .cards-slider {
+        overflow: visible;
+        width: calc(100% - 50px);
+        margin-left: auto;
+        margin-right: auto;
+        .swiper-slide {
+            transition: opacity 0.3s;
+        }
+        .swiper-slide:not(.swiper-slide-visible) {
+            opacity: 0.5;
+        }
+    }
+}

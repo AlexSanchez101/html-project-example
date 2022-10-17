@@ -1,0 +1,38 @@
+.header-nav {
+    margin-left: 20px;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    &__link {
+        margin-left: 40px;
+        display: inline-block;
+        color: $black;
+        &.active {
+            color: $primary;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .header-nav__link {
+        margin-left: 30px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .header-nav__link {
+        font-size: 16px;
+    }
+    .header-nav__link {
+        margin-left: 20px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .header-nav {
+        display: none;
+    }
+}

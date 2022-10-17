@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% block head %} 
+    {% endblock %}
+    {% include "_head.html" %}
+</head>
+<body>
+    <div class="header-fixed-panel">
+        <div class="container header-fixed-panel__container">
+            <button type="button" class="header-fixed-panel__menu-btn" data-toggle-mobile-menu="">
+                <img src="./assets/img/icon-hamburger-menu.svg" alt="mobile menu">
+            </button>
+            <div class="header-fixed-panel__order">
+                {% include "_main-order-button.html" %}
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <header class="header">
+            {% include "_header.html" %}
+            {% if not homePage %}
+                {% include "_header-content.html" %}
+            {% endif %}
+        </header>
+        <main {{ 'class="main-bottom-padding"' | safe if not homePage }}>
+            {% block content %} 
+            {% endblock %}
+        </main>
+    
+        {% include "_footer.html" %}
+    </div> <!--/page-wrapper-->
+    {% include "_mobile-menu.html" %}
+    
+    {% include "_svg-icons.html" %}
+    {% include "_scripts.html" %}
+    {% block scripts %} 
+    {% endblock %}
+</body>
+</html>

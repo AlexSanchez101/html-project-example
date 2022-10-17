@@ -1,0 +1,51 @@
+@import './vendor/bootstrap4/variables';
+
+
+//$grid-padding: 20px; //conteiners, rows, cols, etc. 
+$grid-padding: 10px; //conteiners, rows, cols, etc. 
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1460px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+);
+
+$primary: #0C73FE;
+$purple: #7F35D7;
+$black: #222;
+
+$gradient: linear-gradient(90.16deg, #25D3DE -0.21%, #0C73FE 99.36%);
+
+$font-family:'Gilroy';
+
+$border-color: #DAE3EA;
+$border-radius: 10px;
+$btn-border-radius: 3px;
+
+$box-shadow: 0px 7px 8px rgba(12, 115, 254, 0.1);
+
+:root {
+  --primary: #0C73FE;
+}

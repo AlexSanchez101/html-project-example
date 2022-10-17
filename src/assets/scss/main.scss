@@ -1,0 +1,117 @@
+@import './vendor/bootstrap4/mixins';
+@import './vendor/bootstrap4/functions';
+
+
+@import './variables';
+@import './functions';
+@import './mixins';
+@import './utilities';
+
+//Bootstrap
+@import './vendor/bootstrap4/utilities/text';
+
+@import './base';
+
+@import './components/containers';
+@import './components/buttons';
+@import './components/forms';
+@import './components/svg-icons';
+@import './components/tippy';
+@import './components/animation-blick';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/section';
+@import './components/popup';
+@import './components/link-arrow';
+@import './components/card';
+@import './components/top-panel';
+@import './components/city-time';
+@import './components/header-nav';
+@import './components/main-order-button';
+@import './components/header-search';
+@import './components/header-fixed-panel';
+@import './components/main-slider';
+@import './components/about-block';
+@import './components/quote-line';
+@import './components/video-block';
+@import './components/cards-slider';
+@import './components/slider-counter-nav';
+@import './components/how-to-order';
+@import './components/soc-media-links';
+@import './components/breadcrumbs';
+@import './components/contact-item';
+@import './components/review';
+@import './components/review-slider';
+@import './components/blog-filter';
+@import './components/dropdown';
+@import './components/article-preview';
+@import './components/article-detail';
+@import './components/audio-player';
+@import './components/audio-block';
+@import './components/article-promo';
+@import './components/promo-block';
+@import './components/rating-block';
+@import './components/watch-also-slider';
+@import './components/tur-card';
+@import './components/turs-slider';
+@import './components/popup-tur';
+@import './components/mobile-menu';
+
+.main-bottom-padding { 
+    padding-bottom: 70px;
+}
+
+main {
+    min-height: 40vh;
+}
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+.go-back-link {
+    font-weight: 600;
+    &:hover {
+        text-decoration: none;
+    }
+    svg {
+        transform: rotate(180deg); 
+        width:26px; 
+        fill: $primary; 
+        margin-top:-0.2em;
+        margin-right: 0.6em;
+    }
+    &:hover svg {
+        fill: $link-hover-color; 
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .container,
+    .container-fluid, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl, 
+    .container-xxl
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.page-order-button-dropdown {
+    a {
+        display: inline-block;
+        margin: 15px 20px;
+    }
+}
+
+.bg-lazy:not(.loaded):not(.swiper-lazy-loaded) {
+    background: $gray-300;
+}
+.blur-lazy:not(.loaded):not(.swiper-lazy-loaded) {
+    filter: blur(6px);
+}

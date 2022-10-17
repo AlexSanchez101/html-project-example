@@ -1,0 +1,78 @@
+.header-search {
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    display: flex;
+    background: $primary;
+    padding: 8px 20px 12px;
+    width: 1025px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    opacity: 0.95;
+    transform: translateY(-100%);
+    z-index: 0;
+    transition: transform 0.3s;
+    &.active {
+        transform: translateY(0);
+    }
+    &-container {
+        position: relative;
+    }
+    &__form {
+        display: flex;
+        flex-grow: 1;
+        position: relative;
+    }
+    &__input {
+        width: 100%;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size: 14px;
+        outline: 0;
+        padding-top: 5px;
+        padding-bottom: 8px;
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    &__submit {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: $primary;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding-right: 10px;
+        padding-left: 10px;
+        svg {
+            fill: #fff;
+        }
+    }
+    &__close-btn {
+        flex-shrink: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        margin-left: 18px;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .header-search {
+        width: 850px;
+    }
+}
+@include media-breakpoint-down(lg) {
+    .header-search {
+        width: 707px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .header-search {
+        display: none;
+    }
+}

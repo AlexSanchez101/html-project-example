@@ -1,0 +1,60 @@
+.tur-card {
+    display: flex;
+    flex-direction: column;
+    .card__image {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-bottom: 30px;
+    }
+    &-name {
+        font-weight: 600;
+        font-size: 17px;
+        margin-bottom: 10px;
+        img {
+            vertical-align: middle;
+            margin-right: 5px;
+            margin-top: -4px;
+        }
+    }
+    &-text {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    &-price {
+        display: flex;
+        align-items:flex-start;
+        &-value {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        &-condition {
+            color: #666666;
+            font-size: 16px;
+            margin-left: 10px;
+            margin-top: 1em;
+        }
+    }
+    &__buttons {
+        padding-top: 15px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .tur-card-price-value {
+        font-size: 24px;
+    }
+    .tur-card-price-condition {
+        margin-top: 0.6em;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .tur-card__buttons .button {
+        width: 100%;
+    }
+}

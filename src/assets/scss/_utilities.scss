@@ -1,0 +1,42 @@
+.h-100 {
+    height: 100% !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+
+.border {
+    &-rounded {
+        border-radius: $border-radius !important;
+        &-0 {
+            border-radius: 0 !important;
+        }
+    }
+}
+
+.line-height-reset {
+    line-height: inherit !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.container-sm-240 {
+    @include media-breakpoint-down(sm) {
+        width: calc(100% - 50px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.container-xs-240 {
+    @include media-breakpoint-down(sm) {
+        width: calc(100% - 50px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

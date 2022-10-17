@@ -1,0 +1,39 @@
+.footer {
+    background: $dark;
+    color: #fff;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    &__nav {
+        font-size: 17px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__copyright {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    &__policy {
+        padding-top: 20px;
+        text-align: right;
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer__copyright {
+        text-align: center;
+    }
+    .footer__policy {
+        text-align: center;
+    }
+}

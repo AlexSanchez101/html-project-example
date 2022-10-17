@@ -1,0 +1,9 @@
+.link-arrow {
+    fill: $link-color;
+    svg {
+        height: 0.78em;
+    }
+    &:hover {
+        color: $link-hover-color;
+    }
+}

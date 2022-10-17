@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-10 mx-auto">
+            <ul class="breadcrumbs">
+                {% for item in breadcrumbs %}
+                <li><a href="#">{{ item }}</a></li>
+                {% endfor %}
+                <li>{{ title }}</li>
+            </ul>
+            <h1 class="page-heading">{{ title }}</h1>
+        </div>
+    </div>
+</div>

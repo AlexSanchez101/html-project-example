@@ -1,0 +1,18 @@
+.review {
+    border: 1px solid #DAE3EA;
+    border-radius: $border-radius;
+    padding: 5.30rem 30px 40px;
+    box-shadow: $box-shadow;
+    background: url('../img/review-quotes.svg') no-repeat;
+    background-position: 2rem 2rem;
+    &__author {
+        font-weight: 600;
+        text-align: right;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .review {
+        background-size: 2.5rem;
+    }
+}

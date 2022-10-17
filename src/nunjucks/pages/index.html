@@ -1,0 +1,211 @@
+{% extends "layout.html" %}
+{% set homePage = true %}
+
+{% block scripts %}
+<script src="./assets/js/how-to-order-animation.min.js?ver=33333"></script>
+{% endblock %}
+
+{% block content %} 
+<div class="swiper main-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="main-slider__item">
+                <img class="main-slider__item-image swiper-lazy blur-lazy" 
+                    src="./assets/img/samples/main-slider-0-resized.png" 
+                    data-src="/assets/img/samples/main-slider-0.png" alt="">
+                <div class="container h-100">
+                    <div class="main-slider__item-body">
+                        <div class="main-slider__item-text">
+                            <div class="main-slider__item-title">Русский гид в Сеуле</div>
+                            <div class="main-slider__item-subtitle">Частные экскурсии пешком и на авто</div>
+                        </div>
+                        <div class="main-slider__item-buttons">
+                            <a href="#" class="button button-purple">Смотреть экскурсии</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="main-slider__item">
+                <img class="main-slider__item-image swiper-lazy blur-lazy" 
+                    src="./assets/img/samples/main-slider-1-resized.jpg" 
+                    data-src="/assets/img/samples/main-slider-1.jpg" alt="">
+                <div class="container h-100">
+                    <div class="main-slider__item-body">
+                        <div class="main-slider__item-text">
+                            <div class="main-slider__item-title">Русский гид в Сеуле</div>
+                            <div class="main-slider__item-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+                        <div class="main-slider__item-buttons">
+                            <a href="#" class="button button-purple">Смотреть экскурсии</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="main-slider__item">
+                <img class="main-slider__item-image swiper-lazy blur-lazy" 
+                    src="./assets/img/samples/main-slider-2-resized.jpg" 
+                    data-src="./assets/img/samples/main-slider-2.jpg" alt="">
+                <div class="container h-100">
+                    <div class="main-slider__item-body">
+                        <div class="main-slider__item-text">
+                            <div class="main-slider__item-title">Гид в Сеуле</div>
+                            <div class="main-slider__item-subtitle">Частные экскурсии пешком и на авто</div>
+                        </div>
+                        <div class="main-slider__item-buttons">
+                            <a href="#" class="button button-purple">Смотреть экскурсии 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-slider__pagination container swiper-pagination"></div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-10 mx-auto grid-xxl-cols-10">
+
+            <div class="section">
+                <div class="about-block">
+                    <h2 class="about-block__heading">Собираетесь в Сеул? Уже&nbsp;здесь? Как&nbsp;насчёт гида?</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-5 mb-md-0">
+                            <div class="about-block__image-wrapper" data-aos="fade-up" data-aos-duration="800">
+                                <picture>
+                                    <source media="(min-width: 768px)" data-srcset="./assets/img/Artem.jpg">
+                                    <source media="(max-width: 765px)" data-srcset="./assets/img/Artem-square.jpg">
+                                    <img class="w-100 border-rounded lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2010%2010'%3E%3C/svg%3E"  data-src="./assets/img/Artem.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-xxl-6">
+                            <div class="quote-line">
+                                Самое большое преимущество развлечений вместе с личным гидом это то, что вы можете получить информацию о местных культуре, людях, устоях, городе и стране в целом из первых уст, от человека, который «прожил» это, и получил знания не из интернета, а из личного опыта
+                            </div>
+                            <div class="pt-3">
+                                <p>Культура и уклад жизни корейцев значительно отличается от того, что мы привыкли созерцать у себя на родине. Именно по этой причине понять всё происходящее в Сеуле (почему это так, как есть) можно не с первого «присеста». Русский гид в Сеуле не только поможет разобраться на местности, но и скоординирует мысленный процесс, чтобы в голове количество вопросов «Почему?» стремилось к нулю.</p>
+                                <p>Проведение индивидуальной экскурсии с частным гидом в Сеуле также гарантирует, что Вам не нужно будет конкурировать за внимание «рассказчика» с незнакомыми людьми из группы (если сравнивать с групповой экскурсией). Другое, не меньшее преимущество вписать гида в свою прогулку — человек вас будет развлекать разными, интересными байками из местной жизни. К тому же, речь идёт о такой своеобразной и самобытной стране как Южная Корея…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="video-block" data-aos="fade-up" data-aos-duration="800">
+                    <div class="video-block__video-container"></div>
+                    <img class="video-block__preview lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2010%2010'%3E%3C/svg%3E"  data-src="./assets/img/video-preview.png" alt="">
+                    <a href="#" data-load-video="" class="video-block__button-container">
+                        <svg width="129" height="87" viewBox="0 0 129 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M126.313 13.9752C125.582 11.3695 124.159 9.01052 122.195 7.14892C120.176 5.23006 117.701 3.85746 115.004 3.16067C104.909 0.500042 64.4678 0.500043 64.4678 0.500043C47.6082 0.308223 30.7527 1.15189 13.9965 3.02629C11.2993 3.77456 8.8288 5.17783 6.80477 7.11129C4.81602 9.02479 3.37552 11.3844 2.62302 13.9698C0.815371 23.7079 -0.0629089 33.5958 2.14612e-05 43.5C-0.0644785 53.3954 0.811646 63.28 2.62302 73.0303C3.3594 75.6049 4.79452 77.9538 6.78865 79.8512C8.78277 81.7485 11.266 83.1192 13.9965 83.8448C24.2251 86.5 64.4678 86.5 64.4678 86.5C81.3488 86.6921 98.2258 85.8485 115.004 83.9738C117.701 83.277 120.176 81.9044 122.195 79.9855C124.184 78.0882 125.598 75.7285 126.307 73.1593C128.162 63.4249 129.064 53.533 129 43.6237C129.14 33.6724 128.239 23.7338 126.313 13.9698V13.9752ZM51.6108 61.904V25.1014L85.2583 43.5054L51.6108 61.904Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <div class="section-heading d-md-flex align-items-center">
+                    <h2 class="mb-4 mb-md-2 text-center text-md-left">Что интересного в Сеуле?</h2>
+                    <div class="slider-counter-nav slider-counter-nav--mobile-expanding ml-auto" data-slider-id="interestPlaces">
+                        <button class="slider-counter-nav__btn prev disabled">
+                            <svg viewBox="0 0 26 16"> 
+                                <use xlink:href="#svgArrowRight" x="0" y="0" />
+                            </svg>  
+                        </button>
+                        <span>
+                            <span class="slider-counter-nav__index" style="min-width: 23px">01</span> / 10
+                        </span>
+                        <button class="slider-counter-nav__btn next">
+                            <svg viewBox="0 0 26 16"> 
+                                <use xlink:href="#svgArrowRight" x="0" y="0" />
+                            </svg>  
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-5 pb-4">
+                    {% include "_place-of-interest.html" %}
+                </div>
+                <div class="pb-4 pb-md-0">
+                    <div class="container-sm-240">
+                        <a href="/turs.html" class="button button-primary button-xs-100"  data-aos="fade-in" data-aos-duration="800">
+                            Смотреть экскурсии
+                            <svg viewBox="0 0 26 16" class="button__icon ml-1"> 
+                                <use xlink:href="#svgArrowRight" x="0" y="0" />
+                            </svg>
+                        </a>   
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--/col-xxl-10-->
+    </div> <!--/row-->
+</div> <!--/container-->
+
+<div class="how-to-order lazy" data-bg="./assets/img/how-to-order-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-10 mx-auto grid-xxl-cols-10">
+                <h2 class="how-to-order__heading">Как заказать экскурсию?</h2>
+                <div class="row row-cols-1 row-cols-md-4 position-relative" style="z-index: 1;">
+                    <div class="col">
+                        <div class="how-to-order__item">
+                            <div class="how-to-order__item-line"><span></span></div>
+                            <div class="how-to-order__item-number">1</div>
+                            <div class="how-to-order__item-body">
+                                <div class="how-to-order__item-icon">
+                                    <img src="./assets/img/how-to-order/phone.svg" alt="">
+                                </div>
+                                <div class="how-to-order__item-text">Напишите или&nbsp;позвоните мне</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="how-to-order__item">
+                            <div class="how-to-order__item-line"><span></span></div>
+                            <div class="how-to-order__item-number">2</div>
+                            <div class="how-to-order__item-body">
+                                <div class="how-to-order__item-icon">
+                                    <img src="./assets/img/how-to-order/calendar.svg" alt="">
+                                </div>
+                                <div class="how-to-order__item-text">Сообщите дату приезда и&nbsp;количество человек</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="how-to-order__item">
+                            <div class="how-to-order__item-line"><span></span></div>
+                            <div class="how-to-order__item-number">3</div>
+                            <div class="how-to-order__item-body">
+                                <div class="how-to-order__item-icon">
+                                    <img src="./assets/img/how-to-order/map.svg" alt="">
+                                </div>
+                                <div class="how-to-order__item-text">Вместе выберем, куда&nbsp;сходить</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="how-to-order__item">
+                            <div class="how-to-order__item-number">4</div>
+                            <div class="how-to-order__item-body">
+                                <div class="how-to-order__item-icon">
+                                    <img src="./assets/img/how-to-order/hands.svg" alt="">
+                                </div>
+                                <div class="how-to-order__item-text">Договариваемся о&nbsp;дате и&nbsp;месте начала экскурсии</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-how-to-order-animation-detector="" data-detected="false"></div>
+            </div> <!--/grid-xxl-cols-10-->
+        </div> <!--/row-->
+    </div>
+</div>
+
+{% endblock %}

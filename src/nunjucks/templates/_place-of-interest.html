@@ -1,0 +1,31 @@
+{% 
+    set interestPlaces = [
+        'Императорский дворец Кёнбоккун',
+        'Буддийский храм Чёгеса',
+        'Намсан башня с фуникулёром',
+        'Лотте Башня',
+        'Рынок морепродуктов Норянджин'
+    ] 
+%}
+
+<div id="interestPlaces" class="swiper cards-slider"  data-aos="fade-up" data-aos-duration="800">
+    <div class="swiper-wrapper">
+        {% for i in range(0,2) %}
+        {% for item in interestPlaces %}
+        <div class="swiper-slide">
+            <div class="cards-slider__item ">
+                <img 
+                    width="220"
+                    height="220"
+                    src="./assets/img/samples/cards-slider/{{ loop.index0 }}.png"
+                    data-src="./assets/img/samples/cards-slider/{{ loop.index0 }}.png" 
+                    alt="" 
+                    class="cards-slider__item-image swiper-lazy blur-lazy">
+                <div class="cards-slider__item-name">{{ item }}</div>
+                <div class="cards-slider__item-text">Испытайте традиционную кухню и культуру в Korea House, официальном зале</div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,28 @@
+.review-slider {
+    padding: 15px;
+    margin-top: -15px;
+    margin-left: -14px;
+    margin-right: -14px;
+    .swiper-slide {
+        height: auto;
+    }
+    .review {
+        height: 100%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .review-slider {
+        overflow: visible;
+        min-width: 240px;
+        width: calc(100% - 50px);
+        margin: auto;
+        padding: 0;
+    }
+    .review-slider .review {
+        font-size: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-position-x: 1.4rem;
+    }
+}

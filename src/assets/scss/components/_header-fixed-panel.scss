@@ -1,0 +1,54 @@
+.header-fixed-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    z-index: 3;
+    transform: translateY(-100%);
+    transition: all 0.3s;
+    &.active {
+        transform: translateY(0);
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__menu-btn {
+        border: 0;
+        background: transparent;
+        padding: 3px 0;
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+    &__order {
+        margin-left:auto;
+        flex-shrink: 0;
+    }
+    .main-order-button {
+        &__btn {
+            font-size: 13px;
+            padding: 6px 15px;
+            line-height: 1;
+            &-icon {
+                width: 19px;
+                height: 19px;
+                flex-shrink: 0;
+                margin-right: 10px;
+            }
+            &-chevron {
+                width: 15px;
+                flex-shrink: 0;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .header-fixed-panel {
+        display: none;
+    }
+}

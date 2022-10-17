@@ -1,0 +1,42 @@
+.animation-blick {
+    overflow: hidden;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        bottom: -50%;
+        background: linear-gradient(
+        90deg,rgba(255,255,255,.1),rgba(255,255,255,.6) 100%);
+            width: 45px;
+            transform: skewX(
+        -22deg);
+        left: -65%;
+        -webkit-animation-name: animation-blick;
+        animation-name: animation-blick;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+}
+
+@-webkit-keyframes animation-blick {
+    60% {
+        left: 100%
+    }
+
+    to {
+        left: 130%
+    }
+}
+
+@keyframes animation-blick {
+    60% {
+        left: 100%
+    }
+
+    to {
+        left: 130%
+    }
+}

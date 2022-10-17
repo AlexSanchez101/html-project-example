@@ -1,0 +1,97 @@
+html {
+    font-size: 17px;
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-family: $font-family;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $black;
+    letter-spacing: 0.03em;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, .h1 {
+    font-size: 45px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include media-breakpoint-down(lg) {
+        font-size: 36px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+        //font-size: 18px;
+        font-size: 26px;
+    }
+}
+
+h2, .h2 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+        font-size: 28px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 22px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 20px;
+    }
+}
+
+.page-heading {
+    //margin-bottom: 70px;
+    margin-bottom: 40px;
+    /*@include media-breakpoint-down(xl) {
+        margin-bottom: 50px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-bottom: 40px;
+    }*/
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.text-decoration {
+    &-line {
+        text-decoration: underline !important;
+    }
+}
+
+ul {
+    padding-left: 1.9em;
+    list-style: none;
+    li {
+        &::before {
+            content: '';
+            display: inline-block;
+            background: $primary;
+            border-radius: 99em;
+            width: 0.6em;
+            height: 0.55em;
+            position: absolute;
+            margin-left: -1.5em;
+            margin-right: 0.6em;
+            position: relative;
+            left: -0.4em;
+        }
+    }
+}

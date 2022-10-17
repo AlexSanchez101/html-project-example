@@ -1,0 +1,344 @@
+{% extends "layout.html" %}
+{% set title = "Экскурсии" %}
+{% set breadcrumbs = ["Главная"] %}
+
+
+{% block content %} 
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-10 mx-auto grid-xxl-cols-10">
+            <p>Заказ экскурсии в Сеуле позволит сэкономить время и деньги. В таких популярных туристических городах, как Сеул, важно иметь возможность попасть без очереди к известным достопримечательностям</p>
+            <div class="d-md-flex section-heading d-lg-none">
+                <div class="slider-counter-nav slider-counter-nav--mobile-expanding ml-auto" data-slider-id="tursSlider">
+                    <button class="slider-counter-nav__btn prev disabled">
+                        <svg viewBox="0 0 26 16"> 
+                            <use xlink:href="#svgArrowRight" x="0" y="0" />
+                        </svg>  
+                    </button>
+                    <span>
+                        <span class="slider-counter-nav__index" style="min-width: 23px">01</span> / 03
+                    </span>
+                    <button class="slider-counter-nav__btn next">
+                        <svg viewBox="0 0 26 16"> 
+                            <use xlink:href="#svgArrowRight" x="0" y="0" />
+                        </svg>  
+                    </button>
+                </div>
+            </div>
+            <div id="tursSlider" class="swiper turs-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card tur-card">
+                            <a href="#tur1" data-open-tur="" class="overflow-hidden">
+                                <img  
+                                    src="./assets/img/samples/tur-0.png" 
+                                    data-src="./assets/img/samples/tur-0.png" 
+                                    alt="" 
+                                    class="card__image blur-lazy swiper-lazy">
+                            </a>
+                            <div class="card__body tur-card__body">
+                                <div class="tur-card-name">
+                                    <img src="./assets/img/tur-car-icon.svg" alt="">
+                                    Экскурсия на авто
+                                </div>
+                                <div class="tur-card-text">
+                                    Гуляя своими ногами по улицам Сеула, можно увидеть больше чем просто достопримечательности города
+                                    <a href="#tur1" class="link-arrow" data-open-tur="">
+                                        <svg viewBox="0 0 26 16"> 
+                                            <use xlink:href="#svgArrowRight" x="0" y="0" />
+                                        </svg>  
+                                    </a>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="tur-card-price">
+                                        <div class="tur-card-price-value">300$</div>
+                                        <div class="tur-card-price-condition">1-3 человек</div>
+                                    </div>
+                                    <div class="tur-card-price">
+                                        <div class="tur-card-price-value">400$</div>
+                                        <div class="tur-card-price-condition">4-8 человек</div>
+                                    </div>
+                                </div>
+                                <div class="tur-card__buttons">
+                                    <a href="#tur1" class="button button-slim button-primary" data-open-tur="">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card tur-card">
+                            <a href="#tur2" data-open-tur="" class="overflow-hidden">
+                                <img  
+                                    src="./assets/img/samples/tur-1.png" 
+                                    data-src="./assets/img/samples/tur-1.png" 
+                                    alt="" 
+                                    class="card__image blur-lazy swiper-lazy">
+                            </a>
+                            <div class="card__body tur-card__body">
+                                <div class="tur-card-name">
+                                    <img src="./assets/img/tur-man-icon.svg" alt="">
+                                    Пешая экскурсия
+                                </div>
+                                <div class="tur-card-text">
+                                    Гуляя своими ногами по улицам Сеула, можно увидеть
+                                    <a href="#tur2" class="link-arrow" data-open-tur="">
+                                        <svg viewBox="0 0 26 16"> 
+                                            <use xlink:href="#svgArrowRight" x="0" y="0" />
+                                        </svg>  
+                                    </a>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="tur-card-price">
+                                        <div class="tur-card-price-value">300$</div>
+                                        <div class="tur-card-price-condition">1-3 человек</div>
+                                    </div>
+                                    <div class="tur-card-price">
+                                        <div class="tur-card-price-value">400$</div>
+                                        <div class="tur-card-price-condition">4-8 человек</div>
+                                    </div>
+                                </div>
+                                <div class="tur-card__buttons">
+                                    <a href="#tur2" class="button button-slim button-primary" data-open-tur="">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card tur-card">
+                            <a href="#tur3" data-open-tur="" class="overflow-hidden">
+                                <img  
+                                    src="./assets/img/samples/tur-2.png" 
+                                    data-src="./assets/img/samples/tur-2.png" 
+                                    alt="" 
+                                    class="card__image blur-lazy swiper-lazy">
+                            </a>
+                            <div class="card__body tur-card__body">
+                                <div class="tur-card-name">
+                                    <img src="./assets/img/tur-mountain-icon.svg" alt="">
+                                    Не Сеул
+                                </div>
+                                <div class="tur-card-text">
+                                    Гуляя своими ногами по улицам Сеула, можно увидеть больше чем просто достопримечательности города
+                                    <a href="#tur3" class="link-arrow" data-open-tur="">
+                                        <svg viewBox="0 0 26 16"> 
+                                            <use xlink:href="#svgArrowRight" x="0" y="0" />
+                                        </svg>  
+                                    </a>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="tur-card-price">
+                                        <div class="tur-card-price-value">300$</div>
+                                        <div class="tur-card-price-condition">1-3 человек</div>
+                                    </div>
+                                    <div class="tur-card-price">
+                                        <div class="tur-card-price-value">400$</div>
+                                        <div class="tur-card-price-condition">4-8 человек</div>
+                                    </div>
+                                </div>
+                                <div class="tur-card__buttons">
+                                    <a href="#tur3" class="button button-slim button-primary" data-open-tur="">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-heading text-center text-md-left">Дополнительные услуги</h2>
+                <div class="card card--horizontal"  data-aos="fade-up" data-aos-duration="800">
+                    <div class="card__image overflow-hidden">
+                        <img 
+                            class="lazy blur-lazy"
+                            src="./assets/img/service-img.png"
+                            data-src="./assets/img/service-img.png"
+                            alt="">
+                    </div>
+                    <div class="card__body">
+                        <div class="tur-card-name">Встреча в аэропорту и сопровождение</div>
+                        <div class="tur-card-text mb-2">
+                            Скорее всего, вы прилетите в международный аэропорт Инчхон. Помимо экскурсий могу вас встретить в аэропорту по прилёту и сопроводить до вашего отеля, затем помочь заселиться....
+                            <a href="#dopService1" class="link-arrow" data-open-tur="">
+                                <svg viewBox="0 0 26 16"> 
+                                    <use xlink:href="#svgArrowRight" x="0" y="0" />
+                                </svg>  
+                            </a>
+                        </div>
+                        <div class="tur-card-price">
+                            <div class="tur-card-price-value">250$</div>
+                            <div class="tur-card-price-condition">1-3 человек <span class="d-none d-md-inline-block"></span>(мой автомобиль)</div>
+                        </div>
+                        <div class="tur-card-price">
+                            <div class="tur-card-price-value">300$</div>
+                            <div class="tur-card-price-condition">4-8 человек <span class="d-none d-md-inline-block">(беру более вместительный автомобиль)</span></div>
+                        </div>
+                        <div class="pt-2">
+                            <a href="#tur3" class="button button-slim button-primary button-xs-100">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section pt-5">
+                <div class="section-heading d-md-flex align-items-center">
+                    <h2 class="mb-4 mb-md-2 text-center text-md-left">Что интересного в Сеуле?</h2>
+                    <div class="slider-counter-nav slider-counter-nav--mobile-expanding ml-auto" data-slider-id="interestPlaces">
+                        <button class="slider-counter-nav__btn prev disabled">
+                            <svg viewBox="0 0 26 16"> 
+                                <use xlink:href="#svgArrowRight" x="0" y="0" />
+                            </svg>  
+                        </button>
+                        <span>
+                            <span class="slider-counter-nav__index" style="min-width: 23px">01</span> / 10
+                        </span>
+                        <button class="slider-counter-nav__btn next">
+                            <svg viewBox="0 0 26 16"> 
+                                <use xlink:href="#svgArrowRight" x="0" y="0" />
+                            </svg>  
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-5 pb-4">
+                    {% include "_place-of-interest.html" %}
+                </div>
+            </div>
+
+            <div class="d-none">
+                <div class="popup-tur__content" id="tur1">
+                    <div 
+                        class="popup-tur__top-bg lazy bg-lazy" 
+                        data-bg="./assets/img/samples/tur-popup-1.png">
+                    </div>
+                    <div class="popup-tur__body">
+                        <div class="popup-tur__name">
+                            <img src="./assets/img/tur-car-icon.svg" alt="">
+                            Экскурсия на авто
+                        </div>
+                        <p>
+                            Гуляя своими ногами по улицам Сеула, можно увидеть больше чем просто достопримечательности города.
+                        </p>
+
+                        <p>
+                            Мы обговорим маршрут передвижения, но в любое время можно импровизировать и менять наши планы на ходу. Ведь можно увидеть какое-то кафе, ресторан или галерею, куда неожиданно захочется заглянуть и провести там некоторое время. Зачем себе в этом отказывать? 
+                        </p>
+                        
+                        <p>
+                            Также по ходу прогулки получится воспользоваться местным метро и автобусами, что, несомненно, добавляет впечатлений о городе. 
+                        </p>
+                        <blockquote>
+                            Время проведения – 5 часов
+                        </blockquote>
+                        
+                        <p>
+                            Эта цифра не взята из головы, а выяснена на опыте. Большинство людей, которых мне довелось развлекать, сохраняют энтузиазм и интерес во время тура на протяжении примерно 5 часов. Если дольше, прогулка утомляет.
+                        </p>
+                        <b>Стоимость пешей прогулки:</b>
+                        <div class="mb-2">
+                            <div class="tur-card-price">
+                                <div class="tur-card-price-value">300$</div>
+                                <div class="tur-card-price-condition">1-3 человек</div>
+                            </div>
+                            <div class="tur-card-price">
+                                <div class="tur-card-price-value">400$</div>
+                                <div class="tur-card-price-condition">4-8 человек</div>
+                            </div>
+                        </div>
+                        <p>Опыт показал, что в группе из больше чем 8 человек очень сложно уделить значительное количество внимания каждому человеку. Поэтому гулять с одним человеком или с группой от 2 до 8 человек – самое оптимальное решение. </p>
+
+                    </div>
+                </div>
+
+
+                <div class="popup-tur__content" id="tur2">
+                    <div 
+                        class="popup-tur__top-bg lazy bg-lazy" 
+                        data-bg="./assets/img/samples/tur-popup-2.png">
+                    </div>
+                    <div class="popup-tur__body">
+                        <div class="popup-tur__name">
+                            <img src="./assets/img/tur-man-icon.svg" alt="">
+                            Пешая экскурсия
+                        </div>
+                        <p>
+                            Гуляя своими ногами по улицам Сеула, можно увидеть больше чем просто достопримечательности города.
+                        </p>
+
+                        <p>
+                            Мы обговорим маршрут передвижения, но в любое время можно импровизировать и менять наши планы на ходу. Ведь можно увидеть какое-то кафе, ресторан или галерею, куда неожиданно захочется заглянуть и провести там некоторое время. Зачем себе в этом отказывать? 
+                        </p>
+                        
+                        <p>
+                            Также по ходу прогулки получится воспользоваться местным метро и автобусами, что, несомненно, добавляет впечатлений о городе. 
+                        </p>
+                        <blockquote>
+                            Время проведения – 5 часов
+                        </blockquote>
+                        
+                        <p>
+                            Эта цифра не взята из головы, а выяснена на опыте. Большинство людей, которых мне довелось развлекать, сохраняют энтузиазм и интерес во время тура на протяжении примерно 5 часов. Если дольше, прогулка утомляет.
+                        </p>
+                        <b>Стоимость пешей прогулки:</b>
+                        <div class="mb-2">
+                            <div class="tur-card-price">
+                                <div class="tur-card-price-value">300$</div>
+                                <div class="tur-card-price-condition">1-3 человек</div>
+                            </div>
+                            <div class="tur-card-price">
+                                <div class="tur-card-price-value">400$</div>
+                                <div class="tur-card-price-condition">4-8 человек</div>
+                            </div>
+                        </div>
+                        <p>Опыт показал, что в группе из больше чем 8 человек очень сложно уделить значительное количество внимания каждому человеку. Поэтому гулять с одним человеком или с группой от 2 до 8 человек – самое оптимальное решение. </p>
+
+                    </div>
+                </div>
+
+
+                <div class="popup-tur__content" id="tur3">
+                    <div 
+                        class="popup-tur__top-bg lazy bg-lazy" 
+                        data-bg="./assets/img/samples/tur-popup-3.png">
+                    </div>
+                    <div class="popup-tur__body">
+                        <div class="popup-tur__name">
+                            <img src="./assets/img/tur-mountain-icon.svg" alt="">
+                            Не Сеул
+                        </div>
+                        <p>
+                            Гуляя своими ногами по улицам Сеула, можно увидеть больше чем просто достопримечательности города.
+                        </p>
+
+                        <p>
+                            Мы обговорим маршрут передвижения, но в любое время можно импровизировать и менять наши планы на ходу. Ведь можно увидеть какое-то кафе, ресторан или галерею, куда неожиданно захочется заглянуть и провести там некоторое время. Зачем себе в этом отказывать? 
+                        </p>
+                        
+                        <p>
+                            Также по ходу прогулки получится воспользоваться местным метро и автобусами, что, несомненно, добавляет впечатлений о городе. 
+                        </p>
+                        <blockquote>
+                            Время проведения – 5 часов
+                        </blockquote>
+                        
+                        <p>
+                            Эта цифра не взята из головы, а выяснена на опыте. Большинство людей, которых мне довелось развлекать, сохраняют энтузиазм и интерес во время тура на протяжении примерно 5 часов. Если дольше, прогулка утомляет.
+                        </p>
+                        <b>Стоимость пешей прогулки:</b>
+                        <div class="mb-2">
+                            <div class="tur-card-price">
+                                <div class="tur-card-price-value">300$</div>
+                                <div class="tur-card-price-condition">1-3 человек</div>
+                            </div>
+                            <div class="tur-card-price">
+                                <div class="tur-card-price-value">400$</div>
+                                <div class="tur-card-price-condition">4-8 человек</div>
+                            </div>
+                        </div>
+                        <p>Опыт показал, что в группе из больше чем 8 человек очень сложно уделить значительное количество внимания каждому человеку. Поэтому гулять с одним человеком или с группой от 2 до 8 человек – самое оптимальное решение. </p>
+
+                    </div>
+                </div>
+
+            </div>
+            
+        </div> <!--/grid-xxl-cols-10-->
+    </div>
+</div>
+{% endblock %}

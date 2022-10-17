@@ -1,0 +1,207 @@
+{% extends "layout.html" %}
+{% set title = "Блог о Корее" %}
+{% set breadcrumbs = ["Главная"] %}
+
+
+{% block head %}
+<link rel="stylesheet" href="./assets/vendor/jquery-ui-player/jquery-ui.structure.min.css">
+{% endblock %}
+{% block scripts %}
+<script src="./assets/vendor/jquery-ui-player/jquery-ui.min.js"></script>
+<script src="./assets/vendor/jquery-ui-player/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/audio-player.min.js?ver=33333"></script>
+{% endblock %}
+
+{% block content %} 
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-10 mx-auto grid-xxl-cols-10">
+            <form action="">
+                <div class="blog-filter">
+                    <div class="blog-filter__col-1">
+                        <input type="hidden" data-input-hidden-dropdown="razdel" value="">
+                        <input type="text" readonly  data-input-dropdown="razdel" class="form-input form-input-dropdown text-uppercase w-100" placeholder="Все разделы" value="Все разделы">
+                        <div class="d-none">
+                            <div class="dropdown dropdown--selector" data-input-dropdown-content="razdel">
+                                <button type="button" class="dropdown__button" data-value="0">Все разделы</button>
+                                <button type="button" class="dropdown__button" data-value="1">Для туристов о Корее</button>
+                                <button type="button" class="dropdown__button" data-value="2">Южная Корея. История, современность</button>
+                                <button type="button" class="dropdown__button" data-value="3">О личном. Сборник рассказов</button>
+                                <button type="button" class="dropdown__button" data-value="4">Интервью с корейцами</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-filter__col-2">
+                        <input type="hidden" data-input-hidden-dropdown="sort" value="">
+                        <input type="text" readonly  data-input-dropdown="sort" class="form-input form-input-dropdown font-weight-bold w-100" placeholder="Сортировка" value="Самые просматриваемые">
+                        <div class="d-none">
+                            <div class="dropdown dropdown--selector" data-input-dropdown-content="sort">
+                                <button type="button" class="dropdown__button" data-value="0">Самые просматриваемые</button>
+                                <button type="button" class="dropdown__button" data-value="1">Менее просматриваемые</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-filter__col-3">
+                        <input type="hidden" data-input-hidden-dropdown="sortDate" value="">
+                        <input type="text" readonly  data-input-dropdown="sortDate" class="form-input form-input-dropdown font-weight-bold w-100" placeholder="Сортировка" value="По дате публикации">
+                        <div class="d-none">
+                            <div class="dropdown dropdown--selector" data-input-dropdown-content="sortDate">
+                                <button type="button" class="dropdown__button" data-value="0">Сначала новые</button>
+                                <button type="button" class="dropdown__button" data-value="1">Сначала старые</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-filter__col-4">
+                        <button type="submit" class="button button-primary blog-filter__submit">Применить</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+            {% for i in range(0,3)%}
+                <div class="mb-5 col-md-6 col-lg-12" 
+                    data-aos="fade-up" 
+                    data-aos-duration="800" 
+                    data-aos-offset="000"
+                    data-aos-once="true"
+                    >
+                    <div class="article-preview">
+                        <a href="/blog-detail.html" class="article-preview__image">
+                            <picture>
+                                <source media="(min-width: 992px)"  data-srcset="/assets/img/samples/article-1.png">
+                                <source media="(max-width: 991px)"  data-srcset="/assets/img/samples/article-1-wide.png">
+                                <img
+                                    class="lazy blur-lazy"
+                                    src="./assets/img/samples/article-1.png"
+                                    data-scr="./assets/img/samples/article-1.png" 
+                                    alt="">
+                            </picture>
+                        </a>
+                        <div class="article-preview__body">
+                            <div class="article-preview__tags">
+                                <a href="#" class="article-preview__tags-item">Для туристов в корее</a>
+                            </div>
+                            <h2 class="article-preview__heading">
+                                <a href="/blog-detail.html">
+                                    Высочайшее здание в Республике Корея – Лотте Башня (+АУДИО)
+                                </a>
+                            </h2>
+                            <div class="article-preview__text">
+                                Самая основная информация о Лотте Башне — одной из самых важных Самая основная информация о Лотте Башне — одной из самых важных Самая основная информация о Лотте ...
+                                <a href="/blog-detail.html" class="article-preview__read-more-arrow">
+                                    <svg viewBox="0 0 26 16"> 
+                                        <use xlink:href="#svgArrowRight" x="0" y="0" />
+                                    </svg>  
+                                </a>
+                            </div>
+                            <div class="audio-player">
+                                <div class="jp-jplayer" data-src-mp3="http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"></div>
+                                <div class="jp-container audio-player__container">
+                                    <div class="audio-player__play-button">
+                                        <a href="javascript:;" class="jp-play"  tabindex="1">
+                                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.5 41C9.16471 41 0 31.8353 0 20.5C0 9.16471 9.16471 0 20.5 0C31.8353 0 41 9.16471 41 20.5C41 31.8353 31.8353 41 20.5 41ZM20.5 2.41176C10.4912 2.41176 2.41176 10.4912 2.41176 20.5C2.41176 30.5088 10.4912 38.5882 20.5 38.5882C30.5088 38.5882 38.5882 30.5088 38.5882 20.5C38.5882 10.4912 30.5088 2.41176 20.5 2.41176Z" fill="#0C73FE"/>
+                                                <path class="audio-player__play-button-icon" d="M14.4707 30.9911V10.0088L32.5589 20.5L14.4707 30.9911ZM16.8825 14.1088V26.7706L27.7354 20.3794L16.8825 14.1088Z" fill="#0C73FE"/>
+                                            </svg>   
+                                        </a>
+                                        <a class="jp-pause" href="javascript:;" tabindex="1">
+                                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.5 41C9.16471 41 0 31.8353 0 20.5C0 9.16471 9.16471 0 20.5 0C31.8353 0 41 9.16471 41 20.5C41 31.8353 31.8353 41 20.5 41ZM20.5 2.41176C10.4912 2.41176 2.41176 10.4912 2.41176 20.5C2.41176 30.5088 10.4912 38.5882 20.5 38.5882C30.5088 38.5882 38.5882 30.5088 38.5882 20.5C38.5882 10.4912 30.5088 2.41176 20.5 2.41176Z" fill="#0C73FE"/>
+                                                <rect class="audio-player__play-button-icon" x="15" y="10" width="3" height="21" fill="#0C73FE"/>
+                                                <rect class="audio-player__play-button-icon" x="23" y="10" width="3" height="21" fill="#0C73FE"/>
+                                            </svg>                                                
+                                        </a>
+                                    </div>
+                                    <div class="jp-progress-slider audio-player__progress"></div>
+                                    <div class="audio-player__sound-control">
+                                        <div class="jp-mute">
+                                            <a href="javascript:;"  tabindex="1">
+                                                <img src="./assets/img/player-unmute-icon.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jp-unmute" style="display: none;">
+                                            <a href="javascript:;" tabindex="1">
+                                                <img src="./assets/img/player-mute-icon.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jp-volume-slider"></div>
+                                    </div>
+                                    <div class="audio-player__time">
+                                        <div class="jp-current-time">--</div>/<div class="jp-duration">--</div>
+                                    </div>
+                                </div>
+                            </div> <!--audio-player-->
+                            <div class="article-preview__info">
+                                <div class="article-preview__views">
+                                    <img src="./assets/img/views-icon.svg" alt="">
+                                    1223
+                                </div>
+                                <div class="article-preview__date">
+                                    <img src="./assets/img/publish-date-icon.svg" alt="">
+                                    14 ноября, 2020
+                                </div>
+                            </div>
+                            <div class="article-preview__buttons">
+                                <a href="/blog-detail.html" class="button button-primary">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5 col-md-6 col-lg-12" 
+                    data-aos="fade-up" 
+                    data-aos-duration="800" 
+                    data-aos-offset="000"
+                    data-aos-once="true"
+                    >
+                    <div class="article-preview">
+                        <a href="/blog-detail.html" class="article-preview__image">
+                            <picture>
+                                <source media="(min-width: 992px)"  data-srcset="/assets/img/samples/article-1.png">
+                                <source media="(max-width: 991px)"  data-srcset="/assets/img/samples/article-1-wide.png">
+                                <img
+                                    class="lazy blur-lazy"
+                                    src="./assets/img/samples/article-1.png"
+                                    data-scr="./assets/img/samples/article-1.png" 
+                                    alt="">
+                            </picture>
+                        </a>
+                        <div class="article-preview__body">
+                            <div class="article-preview__tags">
+                                <a href="#" class="article-preview__tags-item">Для туристов в корее</a>
+                            </div>
+                            <h2 class="article-preview__heading">
+                                <a href="/blog-detail.html">
+                                    Высочайшее здание в Республике Корея – Лотте Башня. Часть 2
+                                </a>
+                            </h2>
+                            <div class="article-preview__text">
+                                Самая основная информация о Лотте Башне — одной из самых важных Самая основная информация о Лотте Башне — одной из самых важных Самая основная информация о Лотте ...
+                                <a href="/blog-detail.html" class="article-preview__read-more-arrow">
+                                    <svg viewBox="0 0 26 16"> 
+                                        <use xlink:href="#svgArrowRight" x="0" y="0" />
+                                    </svg>  
+                                </a>
+                            </div>
+                            <div class="article-preview__info">
+                                <div class="article-preview__views">
+                                    <img src="./assets/img/views-icon.svg" alt="">
+                                    1223
+                                </div>
+                                <div class="article-preview__date">
+                                    <img src="./assets/img/publish-date-icon.svg" alt="">
+                                    14 ноября, 2020
+                                </div>
+                            </div>
+                            <div class="article-preview__buttons">
+                                <a href="/blog-detail.html" class="button button-primary">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div> <!--/row-->
+        </div> <!--/grid-xxl-cols-10-->
+    </div>
+</div>
+{% endblock %}

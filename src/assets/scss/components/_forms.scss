@@ -1,0 +1,26 @@
+//default font-size = 18px
+
+label {
+    font-size: 18px;
+}
+
+.form-input {
+    border:  1px solid $border-color;
+    border-radius: $btn-border-radius;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    //font-size: 0.823rem;
+    font-size: 14px;
+    outline: none;
+    &-dropdown {
+        cursor: pointer;
+        position: relative;
+        background-image: url(../img/icon-chevron-down-black.svg);
+        background-repeat: no-repeat;
+        padding-right: 2.5rem;
+        background-position: right 1rem center;
+        &__button {
+            text-decoration: none;
+        }
+    }
+}

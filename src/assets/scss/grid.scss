@@ -1,0 +1,31 @@
+@import './vendor/bootstrap4/functions';
+@import './vendor/bootstrap4/variables';
+
+@import './variables';
+
+$grid-gutter-width: $grid-padding*2;
+
+@import './vendor/bootstrap4/mixins/breakpoints';
+@import './vendor/bootstrap4/mixins/grid-framework';
+@import './vendor/bootstrap4/mixins/grid';
+
+
+
+@import './vendor/bootstrap4/grid';
+@import './vendor/bootstrap4/utilities/spacing';
+@import './vendor/bootstrap4/utilities/display';
+@import './vendor/bootstrap4/utilities/flex';
+
+@import './vendor/bootstrap4/utilities/float';
+
+
+.grid-xxl-cols-10 {
+    @include media-breakpoint-up(xxl) {
+        @for $i from 1 through 10 {
+            .col-xxl-#{$i} {
+                flex: 10% * $i;
+                max-width: 10% * $i;
+            }
+        }
+    }
+}

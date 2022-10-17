@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+{% set title = "Кто ездит отдыхать в Южную Корею больше всех. Часть 2" %}
+{% set breadcrumbs = ["Главная","Блог о Корее"] %}
+
+{% block head %}
+<link rel="stylesheet" href="./assets/vendor/jquery-ui-player/jquery-ui.structure.min.css">
+{% endblock %}
+{% block scripts %}
+<script src="./assets/vendor/jquery-ui-player/jquery-ui.min.js"></script>
+<script src="./assets/vendor/jquery-ui-player/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/audio-player.min.js?ver=33333"></script>
+{% endblock %}
+
+{% block content %} 
+<div class="container">
+    <div class="row">
+        <div class="col-xxl-10 mx-auto grid-xxl-cols-10">
+            <div class="article-detail">
+                <div class="article-detail__tags">
+                    <a href="#" class="article-detail__tags-item">Южная Корея. История, современность</a>
+                </div>
+                <div class="article-detail__info">
+                    <div class="article-detail__views">
+                        <img src="./assets/img/views-icon.svg" alt="">
+                        1223
+                    </div>
+                    <div class="article-detail__date">
+                        <img src="./assets/img/publish-date-icon.svg" alt="">
+                        14 ноября, 2020
+                    </div>
+                </div>
+                <img class="article-detail__image" src="./assets/img/samples/blog-detail.png" alt="">
+                <p>Эта экскурсия для тех, кто хочет за пару часов исследовать центр древнего Сеула. Я познакомлю вас с главными достопримечательностями южнокорейской столицы, проведу по излюбленным районам местных жителей и расскажу самое важное из истории города. Вы удивитесь, как органично в Сеуле старое сочетается с новым, небоскребы — с древними дворцами, а реки — с «бетонными джунглями»: нужно только знать, куда заглянуть</p>
+                <div class="my-5">
+                    <div class="audio-block">
+                        <div class="audio-block__image">
+                            <picture>
+                                <source media="(min-width: 768px)" data-srcset="/assets/img/samples/audio-block.png">
+                                <source media="(max-width: 767px)" data-srcset="/assets/img/samples/audio-block-wide.png">
+                                <img 
+                                    class="lazy blur-lazy"
+                                    data-scr="./assets/img/samples/audio-block.png"
+                                    src="./assets/img/samples/audio-block.png" 
+                                    alt=""
+                                >
+                                
+                            </picture>
+                        </div>
+                        <div class="audio-block__body">
+                            <div class="audio-block__caption">
+                                "ГИД В СЕУЛЕ" вещает о Южной Корее
+                            </div>
+                            <div class="audio-block__title">
+                                Кто ездит отдыхать в Южную Корею больше всех. Часть 2
+                            </div>
+                            <div class="audio-player">
+                                <div class="jp-jplayer" data-src-mp3="http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"></div>
+                                <div class="jp-container audio-player__container">
+                                    <div class="audio-player__play-button">
+                                        <a href="javascript:;" class="jp-play"  tabindex="1">
+                                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.5 41C9.16471 41 0 31.8353 0 20.5C0 9.16471 9.16471 0 20.5 0C31.8353 0 41 9.16471 41 20.5C41 31.8353 31.8353 41 20.5 41ZM20.5 2.41176C10.4912 2.41176 2.41176 10.4912 2.41176 20.5C2.41176 30.5088 10.4912 38.5882 20.5 38.5882C30.5088 38.5882 38.5882 30.5088 38.5882 20.5C38.5882 10.4912 30.5088 2.41176 20.5 2.41176Z" fill="#0C73FE"/>
+                                                <path class="audio-player__play-button-icon" d="M14.4707 30.9911V10.0088L32.5589 20.5L14.4707 30.9911ZM16.8825 14.1088V26.7706L27.7354 20.3794L16.8825 14.1088Z" fill="#0C73FE"/>
+                                            </svg>   
+                                        </a>
+                                        <a class="jp-pause" href="javascript:;" tabindex="1">
+                                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.5 41C9.16471 41 0 31.8353 0 20.5C0 9.16471 9.16471 0 20.5 0C31.8353 0 41 9.16471 41 20.5C41 31.8353 31.8353 41 20.5 41ZM20.5 2.41176C10.4912 2.41176 2.41176 10.4912 2.41176 20.5C2.41176 30.5088 10.4912 38.5882 20.5 38.5882C30.5088 38.5882 38.5882 30.5088 38.5882 20.5C38.5882 10.4912 30.5088 2.41176 20.5 2.41176Z" fill="#0C73FE"/>
+                                                <rect class="audio-player__play-button-icon" x="15" y="10" width="3" height="21" fill="#0C73FE"/>
+                                                <rect class="audio-player__play-button-icon" x="23" y="10" width="3" height="21" fill="#0C73FE"/>
+                                            </svg>                                                
+                                        </a>
+                                    </div>
+                                    <div class="jp-progress-slider audio-player__progress"></div>
+                                    <div class="audio-player__sound-control">
+                                        <div class="jp-mute">
+                                            <a href="javascript:;"  tabindex="1">
+                                                <img src="./assets/img/player-unmute-icon.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jp-unmute" style="display: none;">
+                                            <a href="javascript:;" tabindex="1">
+                                                <img src="./assets/img/player-mute-icon.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="jp-volume-slider"></div>
+                                    </div>
+                                    <div class="audio-player__time">
+                                        <div class="jp-current-time">--</div>/<div class="jp-duration">--</div>
+                                    </div>
+                                </div>
+                            </div> <!--audio-player-->
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap align-item-center mx-n1 my-3">
+                        <div class="mx-1">Subscribe:</div>
+                        <div  class="mx-1"><a href="#" target="_blank">Apple Podcasts</a></div>|
+                        <div  class="mx-1"><a href="#" target="_blank">Google Podcasts</a></div>|
+                        <div  class="mx-1"><a href="#" target="_blank">Yandex</a></div>
+                    </div>
+                </div> <!--/my-5-->
+
+                <h2>Монументы площади Кванхвамун</h2>
+                <p>
+                    Конечно, мы не обойдем вниманием одно из главных must-see мест Сеула — центральную площадь Кванхвамун. Вы рассмотрите знаменитые памятники создателю современного корейского алфавита королю Сечжону и адмиралу Ли Сун Сину — «герою отечества», не проигравшему ни одной битвы.
+                </p>
+
+                <div class="my-5">
+                    <div class="article-promo card card--padding">
+                        <div class="article-promo__tags">
+                            <a href="#" class="article-promo__tags-item">Для туристов в Корее</a>
+                        </div>
+                        <a href="#" class="article-promo__title">
+                            Высочайшее здание в Республике Корея – Лотте Башня
+                        </a>
+                        <div class="article-promo__text">
+                            Самая основная информация о Лотте Башне — одной из самых важных достопримечательностей в Корее основная информация о Лотте Башне — одной из самых важных достопримечательностей в Корее...
+                        </div>
+                        <div class="article-promo__info">
+                            <div class="article-promo__views">
+                                <img src="./assets/img/views-icon.svg" alt="">
+                                1223
+                            </div>
+                            <div class="article-promo__date">
+                                <img src="./assets/img/publish-date-icon.svg" alt="">
+                                14 ноября, 2020
+                            </div>
+                        </div>
+                        <a href="#" class="article-promo__hover-link"></a>
+                    </div>
+                </div> <!--/my-5-->
+                <h2>Традиционные дома и дворец императора</h2>
+                <p>Мы прогуляемся по одному из центральных районов Сеула, в котором сохранились и тщательно оберегаются маленькие традиционные корейские домики. В этом жилом районе и, вместе с тем, музее под открытым небом вы уловите атмосферу и колорит старого города, познакомитесь с особенностями корейского быта. А пройдя к императорскому дворцу Кёнбоккун, оцените архитектурные контрасты Сеула, узнаете о жизни высшего сословия и, если повезет, увидите ежедневную смену караула.</p>
+                <img src="./assets/img/samples/blog-detail-1.png" class="border-rounded my-4" alt="">
+                <h2>Традиционные дома и дворец императора</h2>
+                <p>Мы прогуляемся по одному из центральных районов Сеула, в котором сохранились и тщательно оберегаются маленькие традиционные корейские домики. В этом жилом районе и, вместе с тем, музее под открытым небом вы уловите атмосферу и колорит старого города, познакомитесь с особенностями корейского быта. А пройдя к императорскому дворцу Кёнбоккун, оцените архитектурные контрасты Сеула, узнаете о жизни высшего сословия и, если повезет, увидите ежедневную смену караула.</p>
+                <p>Мы прогуляемся по одному из центральных районов Сеула, в котором сохранились и тщательно оберегаются маленькие традиционные корейские домики. В этом жилом районе и, вместе с тем, музее под открытым небом вы уловите атмосферу и колорит старого города, познакомитесь с особенностями корейского быта. А пройдя к императорскому дворцу Кёнбоккун, оцените архитектурные контрасты Сеула, узнаете о жизни высшего сословия и, если повезет, увидите ежедневную смену караула.</p>
+                <p>Мы прогуляемся по одному из центральных районов Сеула, в котором сохранились и тщательно оберегаются маленькие традиционные корейские домики. В этом жилом районе и, вместе с тем, музее под открытым небом вы уловите атмосферу и колорит старого города, познакомитесь с особенностями корейского быта. А пройдя к императорскому дворцу Кёнбоккун, оцените архитектурные контрасты Сеула, узнаете о жизни высшего сословия и, если повезет, увидите ежедневную смену караула.Мы прогуляемся по одному из центральных районов Сеула, в котором сохранились и тщательно оберегаются маленькие традиционные корейские домики. В этом жилом районе и, вместе с тем, музее под открытым небом вы уловите атмосферу и колорит старого города, познакомитесь с особенностями корейского быта. А пройдя к императорскому дворцу Кёнбоккун, оцените архитектурные контрасты Сеула, узнаете о жизни высшего сословия и, если повезет, увидите ежедневную смену караула</p>
+            </div> <!--/article-detail-->
+            <div class="my-5">
+                <div class="promo-block lazy" data-bg="./assets/img/promo-block-bg.png">
+                    <div class="promo-block__heading">Частные экскурсии с русским гидом в&nbsp;Сеуле пешком и&nbsp;на&nbsp;авто</div>
+                    <div class="promo-block__contact">
+                        <span class="d-none d-md-inline">связаться с гидом</span>
+                        <div class="promo-block__contact-list">
+                            <a href="https://t.me/guideinseoul" target="blank"><img src="./assets/img/icon-telegram-blue.svg" alt=""></a>
+                            <a href="https://wa.me/+821039230726" target="blank"><img src="./assets/img/icon-whatsapp-blue.svg" alt=""></a>
+                            <a href="tel:+821039230726"><img src="./assets/img/icon-phone-blue.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5 pt-4">
+                <div class="rating-block card card--padding">
+                    <div class="row row-cols-4 row-cols-lg-5">
+                        <div class="col rating-block__item">
+                            <a href="#" class="rating-block__item-btn">
+                                <img src="./assets/img/smile/smile-explode.svg" alt="">
+                            </a>
+                            <div class="rating-block__item-caption">Познавательно</div>
+                            <div class="rating-block__item-count">39</div>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="rating-block__item-btn">
+                                <img src="./assets/img/smile/smile-love.svg" alt="">
+                            </a>
+                            <div class="rating-block__item-caption">Познавательно</div>
+                            <div class="rating-block__item-count">39</div>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="rating-block__item-btn">
+                                <img src="./assets/img/smile/smile-thinking.svg" alt="">
+                            </a>
+                            <div class="rating-block__item-caption">Познавательно</div>
+                            <div class="rating-block__item-count">39</div>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="rating-block__item-btn">
+                                <img src="./assets/img/smile/smile-hmm.svg" alt="">
+                            </a>
+                            <div class="rating-block__item-caption">Познавательно</div>
+                            <div class="rating-block__item-count">39</div>
+                        </div>
+                        <div class="col d-none d-lg-block">
+                            <a href="#" class="rating-block__item-btn">
+                                <img src="./assets/img/smile/smile-5.svg" alt="">
+                            </a>
+                            <div class="rating-block__item-caption">Познавательно</div>
+                            <div class="rating-block__item-count">39</div>
+                        </div>
+                    </div>
+                </div> 
+            </div><!--/my-5-->
+            <div class="section-heading d-md-flex align-items-center">
+                <h2 class="mb-4 mb-md-2 text-center text-md-left">Смотрите также</h2>
+                <div class="slider-counter-nav slider-counter-nav--mobile-expanding ml-auto d-md-none" data-slider-id="watchAlsoSlider">
+                    <button class="slider-counter-nav__btn prev disabled">
+                        <svg viewBox="0 0 26 16"> 
+                            <use xlink:href="#svgArrowRight" x="0" y="0" />
+                        </svg>  
+                    </button>
+                    <span>
+                        <span class="slider-counter-nav__index" style="min-width: 23px">01</span> / 02
+                    </span>
+                    <button class="slider-counter-nav__btn next">
+                        <svg viewBox="0 0 26 16"> 
+                            <use xlink:href="#svgArrowRight" x="0" y="0" />
+                        </svg>  
+                    </button>
+                </div>
+            </div>
+          
+            <div class="watch-also-slider swiper" id="watchAlsoSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="article-promo card card--padding">
+                            <div class="article-promo__tags">
+                                <a href="#" class="article-promo__tags-item">Для туристов в Корее</a>
+                            </div>
+                            <a href="#" class="article-promo__title">
+                                Высочайшее здание в Республике Корея – Лотте Башня
+                            </a>
+                            <div class="article-promo__text">
+                                Самая основная информация о Лотте Башне — одной из самых важных достопримечательностей в Корее основная информация о Лотте Башне — одной из самых важных достопримечательностей в Корее...
+                            </div>
+                            <div class="article-promo__info flex-wrap">
+                                <div class="article-promo__views w-100 mb-3">
+                                    <img src="./assets/img/views-icon.svg" alt="">
+                                    1223
+                                </div>
+                                <div class="article-promo__date">
+                                    <img src="./assets/img/publish-date-icon.svg" alt="">
+                                    14 ноября, 2020
+                                </div>
+                            </div>
+                            <a href="#" class="article-promo__hover-link"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="article-promo card card--padding">
+                            <div class="article-promo__tags">
+                                <a href="#" class="article-promo__tags-item">Для туристов в Корее</a>
+                            </div>
+                            <a href="#" class="article-promo__title">
+                                Высочайшее здание в Республике Корея – Лотте Башня
+                            </a>
+                            <div class="article-promo__text">
+                                Самая основная информация о Лотте Башне — одной из самых важных достопримечательностей в Корее основная информация о Лотте Башне
+                            </div>
+                            <div class="article-promo__info flex-wrap">
+                                <div class="article-promo__views w-100 mb-3">
+                                    <img src="./assets/img/views-icon.svg" alt="">
+                                    1223
+                                </div>
+                                <div class="article-promo__date">
+                                    <img src="./assets/img/publish-date-icon.svg" alt="">
+                                    14 ноября, 2020
+                                </div>
+                            </div>
+                            <a href="#" class="article-promo__hover-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--/watch-also-slider-->
+           
+            <div class="my-4">
+                <a href="/blog.html" class="go-back-link">
+                    <svg viewBox="0 0 26 16"> 
+                        <use xlink:href="#svgArrowRight" x="0" y="0" />
+                    </svg>  
+                    Назад к списку
+                </a>
+            </div>
+        </div> <!--/grid-xxl-cols-10-->
+    </div>
+</div>
+{% endblock %}

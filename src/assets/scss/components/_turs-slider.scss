@@ -1,0 +1,29 @@
+.turs-slider {
+    padding: 15px;
+    margin-top: -15px;
+    margin-left: -14px;
+    margin-right: -14px;
+    //overflow: visible;
+    .swiper-slide {
+        height: auto;
+    }
+    .tur-card {
+        height: 100%;
+    }
+}
+
+
+@include media-breakpoint-down(xs) {
+    .turs-slider {
+        width: calc(100% - 50px);
+        margin: auto;
+        padding: 0;
+        overflow: visible;
+        .swiper-slide {
+            transition: opacity 0.3s;
+        }
+        .swiper-slide:not(.swiper-slide-visible) {
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.about-block {
+    line-height: 1.75;
+    &__heading {
+        margin-bottom: 60px;
+    }
+    &__image-wrapper {
+        padding-right: 40px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .about-block {
+        &__image-wrapper {
+            padding-right: 20px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .about-block {
+        &__heading {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .about-block {
+        &__image-wrapper {
+            padding-right: 0px;
+        }
+        &__heading {
+            text-align: center;
+        }
+    }
+}

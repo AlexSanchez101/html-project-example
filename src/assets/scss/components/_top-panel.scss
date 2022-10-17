@@ -1,0 +1,12 @@
+.top-panel {
+    background: $gradient;
+    padding-top: 11px;
+    padding-bottom: 7px;
+    color: #fff;
+}
+
+@include media-breakpoint-down(xs) {
+    .top-panel .soc-media-links {
+        display: none;
+    }
+}
